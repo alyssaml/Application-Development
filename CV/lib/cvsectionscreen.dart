@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:cv/education.dart';
 import 'package:cv/experience.dart';
@@ -15,7 +13,7 @@ class CVSectionsScreen extends StatelessWidget {
         //title: Text('CV Sections'),
         backgroundColor: const Color.fromRGBO(207, 165, 180, 1),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.white,), // Back arrow icon
+          icon: Icon(Icons.arrow_back, color: Colors.white), // Back arrow icon
           onPressed: () {
             Navigator.pop(context); // Go back to the previous screen
           },
