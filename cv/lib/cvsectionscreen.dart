@@ -48,7 +48,7 @@ class CVSectionsScreen extends StatelessWidget {
               children: [
                 ListTile(
                   leading: Icon(Icons.school, color: Colors.grey),
-                  title: Text('Education', style: GoogleFonts.fredoka(fontSize: 20)),
+                  title: Text('Education', style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500)),
                   onTap: () {
                     Navigator.push(
                       context,
@@ -59,7 +59,7 @@ class CVSectionsScreen extends StatelessWidget {
                 Divider(),
                 ListTile(
                   leading: Icon(Icons.build_outlined, color: Colors.grey),
-                  title: Text('Skills', style: GoogleFonts.fredoka(fontSize: 20)),
+                  title: Text('Skills', style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500)),
                   onTap: () {
                     Navigator.push(
                       context,
@@ -70,7 +70,7 @@ class CVSectionsScreen extends StatelessWidget {
                 Divider(),
                 ListTile(
                   leading: Icon(Icons.paste_outlined, color: Colors.grey),
-                  title: Text('Projects', style: GoogleFonts.fredoka(fontSize: 20)),
+                  title: Text('Projects', style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500)),
                   onTap: () {
                     Navigator.push(
                       context,
@@ -81,7 +81,7 @@ class CVSectionsScreen extends StatelessWidget {
                 Divider(),
                 ListTile(
                   leading: Icon(Icons.local_library_outlined, color: Colors.grey),
-                  title: Text('Experience', style: GoogleFonts.fredoka(fontSize: 20)),
+                  title: Text('Experience', style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500)),
                   onTap: () {
                     Navigator.push(
                       context,

@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:cv/MyCVScreen.dart'; // Replace with actual import if necessary.
+import 'package:cv/MyCVScreen.dart';
+import 'package:google_fonts/google_fonts.dart'; // Replace with actual import if necessary.
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -14,8 +15,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void login() {
     // Basic validation with hardcoded credentials
-    if (emailController.text == '' &&
-        passwordController.text == '') {
+    if (emailController.text == '' && passwordController.text == '' ||
+        emailController.text == 'alyssa@email.com' && passwordController.text == 'mlalyssa8') {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => MyCVScreen()), // Replace with your desired screen.
@@ -31,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login'),
+        title: Text('Login', style: GoogleFonts.nunito(color: Colors.white),),
         backgroundColor: const Color.fromRGBO(207, 165, 180, 1),
       ),
       body: Padding(
@@ -51,7 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: login,
-              child: Text('Login'),
+              child: Text('Login', style: GoogleFonts.nunito(color: Colors.white),),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromRGBO(207, 165, 180, 1),
               ),
